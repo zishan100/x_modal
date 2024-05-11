@@ -18,13 +18,13 @@ function App (){
   const handleChangeEvent = (e)=>{
     // console.log(e.target,"OnChange event !!!");
     const { name , value } = e.target;
-    console.log(name," ",value)
+    // console.log(name," ",value)
     
     setFormData({
       ...formData,
       [name]:value
     })
-    console.log(formData);
+    // console.log(formData);
   }
   
   const handleOnSubmit =(e)=>{
@@ -57,7 +57,7 @@ function App (){
 
     let errorMsg ='';
     let currTime = new Date().getTime();
-    console.log(regexExp.test(formData.email));
+    // console.log(regexExp.test(formData.email));
 
     if( !formData.username && !formData.username.trim() ){
       errorMsg = 'Invalid Username. Please check your Username'  
